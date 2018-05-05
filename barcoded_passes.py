@@ -13,8 +13,8 @@ rand_list = sorted([random_number_digits(13) for x in range(5000)])
 
 data = {x:[0,"%04d"%y] for x,y in zip(rand_list,range(1,5001))}
 #print(i for i in data.items())
-
-os.makedirs('obj')
+if not os.path.exists('obj'):
+	os.makedirs('obj')
 
 def save_obj(obj, name ):
     with open('obj/'+ name + '.pkl', 'wb') as f:
@@ -35,7 +35,8 @@ for key,val in w.items():
 
 rfile = open("rfile.txt","w")
 
-main_dir = '/home/bharat/code'
+
+main_dir = os.getcwd()
 
 #directory for barcode images
 barcode_images = os.path.join(main_dir,'barcode_images')
@@ -58,7 +59,7 @@ font = ImageFont.truetype("DejaVuSans-Bold.ttf", 18,encoding="unic")
 
 
 
-
+pass_design = os.getcwd()+'/TYFPASSES.jpg'
 
 
 
@@ -91,7 +92,7 @@ for i in range(5000):
 	angle=90
 	rot = img_bcode.rotate( angle, expand=1 )
 
-	youthfest_pass = Image.open('/home/bharat/TYFPASSES.jpg','r')
+	youthfest_pass = Image.open(pass_design,'r')
 
 	bg_w, bg_h = youthfest_pass.size
 	#print("youthfest pass size ",youthfest_pass.size)
