@@ -1,0 +1,7 @@
+Modules which are required are :
+1.PIL
+2.Termcolor
+3.Matplotlib
+4.Numpy
+5.Django
+6.mysql
