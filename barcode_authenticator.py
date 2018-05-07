@@ -36,10 +36,10 @@ def allot_pass(randict):
 
 
 def default_dict():
-	with open("barcode-data-368-499.txt","r") as bfile:
+	with open("final-barcode.txt","r") as bfile:
 		bfile_list=bfile.read().splitlines()
-	if len(bfile_list)==len(range(368,500)):
-		randict = {key:[0,num,"dummy-name"] for num,key in zip(range(368,500),bfile_list)}
+	if len(bfile_list)==len(range(1,5001)):
+		randict = {key:[0,num,"dummy-name"] for num,key in zip(range(1,5001),bfile_list)}
 	else:
 		print("length not same")
 	return randict
@@ -97,7 +97,7 @@ def scan(randict):
 			menu()
 
 		elif line=="allot" or line=='3':
-			print("First you have to stop the scan in progress.(press 3 to stop")
+			print("First you have to stop the scan in progress.(press 3 to stop).")
 
 		else:
 			print("Barcode {} not found.".format(line))
