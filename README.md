@@ -5,6 +5,7 @@ This project is based on automated creation of event passes with barcode and rea
 Before :
 ![alt text](https://github.com/bharat-rajani/Project-barcode-passes/blob/master/TYFPASSES.jpg)
 After :
+![alt text](https://github.com/bharat-rajani/Project-barcode-passes/blob/master/out.png)
 
 
 
