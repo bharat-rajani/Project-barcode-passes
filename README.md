@@ -1,6 +1,12 @@
 # Project-barcode-passes
-![alt text](http://url/to/img.png)
+
 This project is based on automated creation of event passes with barcode and realtime detection and authentication of barcode.
+
+Before :
+![alt text](https://github.com/bharat-rajani/Project-barcode-passes/blob/master/TYFPASSES.jpg)
+After :
+
+
 
 Scenerio: To prevent the forgery of event passes so that unauthenticated people are not allowed to attend the event.
 
